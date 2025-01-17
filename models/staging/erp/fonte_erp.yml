@@ -1,0 +1,14 @@
+sources:
+  - name: erp
+    description: 'Essa é a fonte do sistema ERP da northwind com dados de vendas e transações.'
+    database: FEA24_11
+    schema: raw_northwind   
+    tables:
+      - name: products
+      - name: category
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+      - name: suppliers
